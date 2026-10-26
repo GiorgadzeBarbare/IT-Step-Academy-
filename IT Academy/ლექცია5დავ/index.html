@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კაფე "მარცვალი"</title>
+    <link rel="stylesheet" href="/ლექცია5დავ/style.css">
+</head>
+
+<body>
+    <!-- ჰედერ- საიტის სახელი და ნავიგაცია -->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo"><a href="index.html">კაფე "მარცვალი"</a></div>
+            <nav class="navbar">
+                <a href="#home">მთავარი</a>
+                <a href="#menu">მენიუ</a>
+                <a href="#categories">კატეგორიები</a>
+                <a href="#about">ჩვენ შესახებ</a>
+                <a href="#contact">კონტაქტი</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ძირითადი შინაარსი -->
+    <main>
+        <!-- მთავარი შესავალი სექცია -->
+        <section class="hero-section" id="home">
+            <h1>კეთილი იყოს თქვენი მობრძანება კაფე "მარცვალში"</h1>
+            <p class="intro-paragraph">ისიამოვნე ახლად მოხალული მარცვლებისგან მომზადებული უგემრიელესი ყავით, მყუდრო
+                გარემოთი და უნიკალური დესერტებით ყოველდღე.</p>
+
+            <!-- შეტყობინება ცალკე ხაზზე display:block-ით -->
+            <p class="notice">დღის შეთავაზება: ყოველ ორშაბათს კაპუჩინოზე მოქმედებს 20%-იანი ფასდაკლება!</p>
+            <img src="/photos/coffee.jpg" alt="ახლად მომზადებული არომატული კაპუჩინო" class="img" width="560"
+                height="420">
+
+            <div>
+                <button class="primary-btn">მაგიდის დაჯავშნა</button>
+            </div>
+        </section>
+
+        <!-- მენიუს სექცია -->
+        <section class="menu-section" id="menu">
+            <h2>ჩვენი რჩეული ყავა</h2>
+            <p>ჩვენ ვირჩევთ მხოლოდ უმაღლესი ხარისხის მარცვლებს საუკეთესო პლანტაციებიდან.</p>
+
+            <ul class="coffee-list">
+                <li>ესპრესო - კლასიკური და ძლიერი იტალიური გემო</li>
+                <li>კაპუჩინო - ნაზი რძის ქაფითა და დარიჩინით</li>
+                <li>კარამელის ლატე - ტკბილი, არომატული და მსუბუქი სასმელი</li>
+                <li>ამერიკანო - დაბალანსებული და გამოკვეთილი არომატით</li>
+            </ul>
+        </section>
+
+        <!-- display თვისების დემონსტრაციის სექცია 3 განსხვავებული ელემენტი :)) -->
+        <!-- სერვისის კატეგორიები<3 -->
+        <section class="display-demo-section" id="categories">
+            <h2>სერვისის კატეგორიები</h2>
+            <p>გაეცანით ჩვენს ძირითად მიმართულებებს და შეარჩიეთ თქვენთვის სასურველი პროდუქტი:</p>
+
+            <!-- 1 display:block -->
+            <div class="box-block">კატეგორია 1: ცხელი სასმელები</div>
+
+            <!-- 2 display:inline -->
+            <span class="box-inline">კატეგორია 2: ცივი სასმელები</span>
+
+            <!-- 3 display:inline-block -->
+            <div class="box-inline-block">კატეგორია 3: დესერტები</div>
+        </section>
+
+        <!-- სტატია ჩვენ შესახებ :) -->
+        <article class="about-article" id="about">
+            <h2>ჩვენი ისტორია</h2>
+            <p>კაფე "მარცვალი" შეიქმნა იმისთვის, რომ ქალაქში ყოფილიყო მყუდრო კუთხე, სადაც ადამიანები შეძლებენ მუშაობას,
+                მეგობრებთან შეხვედრას ან უბრალოდ წიგნის კითხვას.</p>
+            <!-- უბრალო ლინკი ;) -->
+            <a href="https://caffe.ge/" class="about-link" target="_blank">გაიგეთ მეტი ჩვენ შესახებ</a>
+        </article>
+
+        <!-- დამატებითი ინფორმაცია (aside) -->
+        <aside class="sidebar-info">
+            <h3>სამუშაო საათები</h3>
+            <p>ორშაბათი - პარასკევი: 08:00 - 22:00 / შაბათ-კვირა: 09:00 - 23:00/p>
+        </aside>
+    </main>
+
+    <!-- ფუტერი საიტის "ბოლო":-; -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-contact">
+            <h3>საკონტაქტო ინფორმაცია</h3>
+            <p>მისამართი: რუსთაველის გამზირი 12, თბილისი</p>
+            <p>ტელეფონი: +995 12 34 56</p>
+            <p>ელ-ფოსტა: info@cafemartsvali.ge</p>
+        </div>
+        <p class="copyright">&copy; 2026 კაფე "მარცვალი". ყველა უფლება დაცულია.</p>
+    </footer>
+</body>
+</html
