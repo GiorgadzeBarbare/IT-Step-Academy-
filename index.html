@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ფიტნეს კლუბი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ეტაპი 2 (fixed და sticky): sticky header -->
+    <header class="header site-header">
+        <a href="index.html" class="logo">Fitness club</a>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">მთავარი</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">სერვისები</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">ჩვენ შესახებ</a></li>
+                <li class="nav-item"><a href="#schedule" class="nav-link">განრიგი</a></li>
+            </ul>
+        </nav>
+        <a href="#services" class="header-btn">გაწევრიანება</a>
+    </header>
+
+    <main class="main-content">
+        <!-- ეტაპი 3 (vh და vw ): hero ბლოკი -->
+        <div class="hero" id="home">
+            <h1 class="main-title">კეთილი იყოს თქვენი მობრძანება ფიტნესს კლუბში</h1>
+            <p class="main-description">გააუმჯობესეთ ჯანმრთელობა და ფიზიკური ფორმა ჩვენთან ერთად. გთავაზობთ თანამედროვე
+                გარემოს და მრავალფეროვან სერვისებს.</p>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">1500+</span>
+                    <span class="stat-label">აქტიური წევრი</span>
+                </div>
+
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">პროფესიონალური მწვრთნელი</span>
+                </div>
+
+
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">სამუშაო რეჟიმი</span>
+                </div>
+            </div>
+        </div>
+
+        <section id="services" class="section">
+            <h2 class="section-title">სერვისები და შეთავაზებები</h2>
+
+            <div class="cards">
+                <article class="card card-basic">
+                    <h3 class="card-title">საბაზისო</h3>
+                    <div class="card-price">70ლ <span>თვე</span></div>
+                    <p class="card-text">დარბაზში ვარჯიში დილის საათებში და გასახდელით სარგებლობა.</p>
+                    <button class="btn">არჩევა</button>
+                </article>
+
+                <!-- ეტაპი 1 (absolute) ბეჯი და overlay ბარათებზეეე -->
+                <article class="card card-featured">
+                    <span class="badge">TOP არჩევანი</span>
+                    <div class="card-overlay"></div>
+                    <h3 class="card-title">პრემიუმი</h3>
+                    <p class="card-text">შეუზღუდავი წვდპმა 24/7, საუნა აუზი და გაკვეთილები</p>
+                    <button class="btn">არჩევა</button>
+                </article>
+
+                <article class="card card-pro">
+                    <h3 class="card-title">პერსონალური</h3>
+                    <div class="card-price">220ლ <span>თვე</span></div>
+                    <p class="card-text">ინდივიდუალური მწვრთნელი, შედგენილი კვების რაციონი და მუდმივი მონინტორინგკი.</p>
+                    <button class="btn">არჩევა</button>
+
+                </article>
+            </div>
+        </section>
+
+        <!-- px და %  ორ მხარეს სექცია -->
+        <section id="about" class="section">
+            <h2 class="section-title">ჩვენ შსახებ</h2>
+
+            <div class="two-column-layout">
+                <div class="column-left text-side">
+                    <h3>რატომ ჩვენი კლუბი?</h3>
+                    <p>ჩვენი ფიტნეს კლუბი დაგეხმარებათ თქვენი მიზნების მიღწევაში. დარბაზი აღჭურვილია უახლესი ინვენტარით,
+                        სდაც შეხვდებით გამოცდილ ინსტრუქტორებს.</p>
+                </div>
+
+                <div class="column-right image-side">
+                    <h3>სამუშაო საათები</h3>
+                    <p>ორშაბათი - პარასკევი: 08:00 - 23:00</p>
+                    <p>შაბათი - კვირა: 09:00 - 21:00</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="section">
+            <h2 class="section-title">ჯგუფური ვარჯიშბის განრიგი</h2>
+            <div class="column-container">
+                <div class="schedule-item">
+                    <div class="schedule-header">
+                        <h3>დილის იოგა</h3>
+                        <span class="badge-room">დარბაზი A</span>
+                    </div>
+                    <P>დრო: 09:00 - 10:00 / მწვრთნელი: ანა</P>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-header">
+                        <h3>კარდიო ვარჯიში</h3>
+                        <span class="badge-room">დარბაზი B</span>
+                    </div>
+                    <p>დრო 14:00 - 15:00 / მწვრთნელი: დავითი</p>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="schedule-header">
+                        <h3>ძალოვანი ვარჯიში</h3>
+                        <span class="badge-room">მთავარი დარბაზი</span>
+                    </div>
+                    <p>დრო 14:00 - 15:00 / მწვრთნელი: გიორგი</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- fixed sticky ფიქსირებული ღილაკი -->
+    <a href="#home" class="to-top btn">ზემოთ</a>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-block">
+                <h4 class="footer-title">კონტაქტი</h4>
+                <p>მისამართი: თბილისი, რუსთაველის გამზ. 10</p>
+                <p>ტელეფონი: +995 555 12 34 56</p>
+                <p>ელ-ფოსტა: info@fitnessclub.ge</p>
+            </div>
+
+            <div class="footer-block">
+                <h4 class="footer-title">სამუშაო საათები</h4>
+                <p>ორშაბათი - პარასკევი: 08:00 - 23:00</p>
+                <p>შაბათი - კვირა: 09:00 - 21:00</p>
+                <p>სადღესასწაულო დღეები: 10:00 - 18:00</p>
+            </div>
+
+            <div class="footer-block">
+                <h4 class="footer-title">დამატებითი სერვისები</h4>
+                <p>უფასო ავტოსადგომი წევრებისთვის</p>
+                <p>ექიმის კონსულტაცია</p>
+                <p>პირსახოცი და საუნა ყველა აბონემენტში</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 ფიტნეს კლუბი. ყველა უფლება დაცულია.</p>
+
+    </footer>
+</body>
+
+</html>
