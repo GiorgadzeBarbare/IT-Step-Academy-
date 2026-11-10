@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="logo">TRAVEL WORLD</div>
+        <!-- navigation -->
+        <nav class="navigation">
+            <a href="#home">მთავარი</a>
+            <a href="#destination">მიმართულებები</a>
+            <a href="#about">ჩვენ შესახებ</a>
+            <a href="#contact">კონტაქტი</a>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main id="home">
+        <!-- introduction -->
+        <section class="intro">
+            <h2>იმოგზაურე და აღმოაჩინე ახალი ადგილები</h2>
+            <p>იმოგზაურე მსოფლიოს ულამაზესი ადგილები, გაიცანი ახალი კულტურები და შექმენი დაუვიწყარი მოგონებები.</p>
+        </section>
+
+        <!-- destination cards -->
+        <section class="destinations" id="destinations">
+            <h2>პოპულარული მიმართულებები</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <!-- ეტაპი 4 srcset-ით ფოტოს შემოტანა  (რანდომ  ფოტოები ავიღე სხვადასხვა ზომებში (საცდელად))-->
+                    <img src="/photos/paris-1200.jpg"
+
+                     srcset="/photos/italy-480.jpg 480w, 
+                             /photos/nature-800.jpg 800w,
+                             /photos/paris-1200.jpg 1200w"
+                             sizes="(min-width: 1024px) 450px, (min-width: 768px) 45vw, 100vw"
+                             alt="პარიზის ულამაზესი ხედი">
+
+                    <div class="card-content">
+                        <h3>პარიზი, საფრანგეთი</h3>
+                        <p>ქალაქი სიყვარულის, ხელოვნებისა და ულამაზესი არქიტექტურის.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="/photos/greece-1200.jpg" alt="საბერძნეთის ზღვის სანაპირო">
+                    <div class="card-content">
+                        <h3>საბერძნეთი</h3>
+                        <p>ზღვის ლურჯი სანაპიროები და უძლიერესი ისტორიული ადგილები.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="/photos/italy-1200.jpg" alt="იტალიის ულამაზესი პეიზაჟი">
+                    <div class="card-content">
+                        <h3>იტალია</h3>
+                        <p>ქვეყანა, რომელიც ცნობილია თავისი ისტორიით, კულტურითა და სამზარეულოთი.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- about section -->
+        <section class="about" id="about">
+            <div class="about-text">
+                <h2>ჩვენ შესახებ</h2>
+                <p>Travel Woeld დაგეხმარება მსოფლიოს საინტერესო ადგილების აღმოჩენაში. ჩვენი მიზანია, მოგზაურობა
+                    ყველასთვის სასიამოვნო და დაუვიწყარი გავხადოთ.</p>
+            </div>
+            <img src="/photos/nature-1200.jpg" alt="ბუნების ულამაზესი ხედი">
+        </section>
+
+        <!-- aside -->
+        <aside class="aside">
+            <h2>რატომ უნდა იმოგზაურო?</h2>
+            <p>მოგზაურობა გვეხმარება ახალი ადამიანების გაცნობაში, განსხვავებული კულტურების აღმოჩენასა და საინტერესო
+                გამოცდილების მიღება.</p>
+        </aside>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TRAVEL WORLD</h3>
+                <p>აღმოაჩინე მსოფლიო და შექმენი დაუვიწყარი მოგონებები.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>სწრაფი ბმულები</h3>
+                <a href="#home">მთავარი</a>
+                <a href="#destinations">მიმართულებები</a>
+                <a href="#about">ჩვენ შესახებ</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>ჩვენი სერვისები</h3>
+                <p>მოგზაურობის დაგეგმვა</p>
+                <p>ტურების შერჩევა</p>
+                <p>სასტუმროების მოძიება</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>საკონტაქტო ინფორმაცია</h3>
+                <p>email: travelworld@gmail.com</p>
+                <p>ტელეფონი: +995 555 123 456</p>
+                <p>მისამართი: თბილისი, საქართველო</p>
+            </div>
+        </div>
+
+        <p class="copyright">&copy; Travel World. ყველა უფლება დაცულია.</p>
+    </footer>
+</body>
+
+</html>
