@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel world</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page">
+    <!-- დავალებაში იყო რომ ძველი html/css გამოგვეყენებინა მაგრამ ახალი გვერდის აწყობა გადავწყვიტე პრაქტიკისთვის.  -->
+
+    <header class="header">
+        <h1>Travel World</h1>
+        <nav class="nav">
+            <a href="#services">სერვისები</a>
+            <a href="#prices">ფასები</a>
+            <a href="#sidebar">ინფორმაცია</a>
+        </nav>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <h2>დამატებითი ინფორმაცია</h2>
+        <p>სამუშაო საათები: 10:00 - 19:00</p>
+        <p>კონსულტაცია უფასოა.</p>
+    </aside>
+
+    <main class="main">
+        <section class="hero">
+            <h2>აღმოაჩინე ახალი მიმართულებები</h2>
+            <p>დაგეგმე მოგზაურობა მარტივად</p>
+        </section>
+
+        <section id="services">
+            <h2>ტურები</h2>
+            <div class="cards">
+                <article class="card card-featured">
+                    <h3>მთავარი შეთავაზება: ევროპის ტური</h3>
+                    <p>დღე, სასტუმრო და ფრენა შედის ფასში.</p>
+                </article>
+
+                <article class="card card-tall">
+                    <h3>მთის კურორტები</h3>
+                    <p>ზამტრისა და ზაფხულის სეზონური ტურები საქართველოში.</p>
+                </article>
+
+                <article class="card">
+                    <h3>ზღვისპირა დასვენება</h3>
+                    <p>5 დღიანი პაკეტი სანაპიროზე.</p>
+                </article>
+
+                <article class="card">
+                    <h3>კულტურული ტური</h3>
+                    <p>ისტორიული ძეგლების მონახულება გიდთან ერთად.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="prices">
+            <h2>ფასების სია</h2>
+            <table>
+                <caption>ტურისტული პაკეტების ფასების სია</caption>
+                <thead>
+                    <tr>
+                        <th>სერვისი</th>
+                        <th>ხანგრძლივობა</th>
+                        <th>ფასი</th>
+                        <th>შენიშვნა</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>საბაზო პაკეტი</td>
+                        <td>3 დღე</td>
+                        <td>250 ლ</td>
+                        <td rowspan="2">შედის ტრანსფერი</td>
+                    </tr>
+
+                    <tr>
+                        <td>სტანდარტული პაკეტი</td>
+                        <td>5 დღე</td>
+                        <td>450 ლ</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">სპეციალური შეთავაზება (7 დღე)</td>
+                        <td>600 ლ</td>
+                        <td>სრული პაკეტი</td>
+                    </tr>
+
+                    <tr>
+                        <td>VIP პაკეტი</td>
+                        <td>10 დღე</td>
+                        <td>1200 ლ</td>
+                        <td>ინდივიდუალური გიდი</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2">სულ</td>
+                        <td>2500 ლ</td>
+                        <td>-</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy;2026 travel world</p>
+    </footer>
+
+</body>
+
+</html>
