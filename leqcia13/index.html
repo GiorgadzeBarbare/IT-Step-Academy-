@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაციის ფორმა</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <section class="form-card" aria-labelledby="form-title">
+            <header class="form-header">
+                <h1 id="form-title">რეგისტრაცია</h1>
+                <p class="form-subtitle">შეავსეთ ველები ანგარიშის შესაქმნელად</p>
+            </header>
+
+            <!-- რეგისტრაციის ფორმა action და method ატრიბუტებით -->
+            <form action="/register" method="post" class="registration-form">
+                <fieldset>
+                    <legend>პირადი ინფორმაცია</legend>
+
+                    <!-- სახელის ველი: required, minlength, maxlength -->
+                    <div class="field-group">
+                        <label for="name">სახელი</label>
+                        <input type="text" id="name" name="name" placeholder="მაგ: ბარბარე" required minlength="2"
+                            maxlength="30">
+                    </div>
+
+                    <!-- ელფოსტის ველი და ARIA შეცდომის შეტყობინება -->
+                    <div class="field-group">
+                        <label for="email">ელფოსტა</label>
+                        <input id="email" name="email" type="email" placeholder="name@mail.com" required
+                            aria-invalid="true" aria-describedby="email-error">
+                        <p id="email-error" class="error-message" role="alert">ჩაწერე სწორი ელფოსტა, მაგალითად
+                            name@mail.com</p>
+                    </div>
+
+                    <!-- ტელეფონის ველი: 9 ციფრი, იწყება 5-ით -->
+                    <div class="field-group">
+                        <label for="phone">ტელეფონი</label>
+                        <input name="phone" id="phone" type="tel" placeholder="5XXXXXXXX" required pattern="5[0-9]{8}"
+                            title="9 ციფრი, იწყება 5-ით">
+                    </div>
+
+                    <!-- ასაკი და დაბადების თარიღი -->
+                    <div class="field-row">
+                        <div class="field-group">
+                            <label for="age">ასაკი</label>
+                            <input id="age" name="age" type="number" placeholder="18" min="16" max="100">
+                        </div>
+
+                        <div class="field-group">
+                            <label for="birthdate">დაბადების თარიღი</label>
+                            <input id="birthdate" name="birthdate" type="date">
+                        </div>
+                    </div>
+
+                    <!-- ქალაქის არჩევა (select) -->
+                    <div class="field-group">
+                        <label for="city">ქალაქი</label>
+                        <select name="city" id="city">
+                            <option value="tbs">თბილისი</option>
+                            <option value="bat">ბათუმი</option>
+                            <option value="kut">ქუთაისი</option>
+                        </select>
+                    </div>
+
+                    <!-- შეტყობინების ველი (textarea) -->
+                    <div class="field-group">
+                        <label for="message">შეტყობინება</label>
+                        <textarea name="message" id="message" rows="3"
+                            placeholder="დამატებითი ინფორმაცია..."></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- გეგმის radio ჯგუფი -->
+                <fieldset>
+                    <legend>გეგმა</legend>
+                    <div class="radio-group">
+                        <div class="choice-item">
+                            <input type="radio" id="p1" name="plan" value="basic">
+                            <label for="p1">საბაზო</label>
+                        </div>
+                        <div class="choice-item">
+                            <input type="radio" id="p2" name="plan" value="pro">
+                            <label for="p2">პრემიუმი</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- წესებზე დათანხმების checkbox -->
+                <div class="choice-item">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">ვეთანხმები წესებს</label>
+                </div>
+
+                <!-- გაგზავნის და „იგზავნება…“ მდგომარეობის ღილაკები -->
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">გაგზავნა</button>
+                    <button type="submit" class="btn-primary" disabled>იგზავნება…</button>
+                </div>
+            </form>
+
+            <!-- Success და Failure შეტყობინებები -->
+            <!-- ინტერნეტში მოვიძიე სიმბოლოები და ეგ დავამატე -->
+
+            <div class="form-states">
+                <p class="state-alert success"> &#10004; რეგისტრაცია წარმატებით დასრულდა.</p>
+                <p class="state-alert failure"> &#10006; გაგზავნა ვერ მოხერხდა. შეამოწმეთ მონაცემები და სცადეთ თავიდან.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
